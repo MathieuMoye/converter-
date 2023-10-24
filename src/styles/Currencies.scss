@@ -1,0 +1,27 @@
+@use "src/styles/vars";
+
+.currencies {
+  background-color: vars.$color-light;
+  max-height: 250px;
+  overflow-y: scroll;
+
+
+&-title {
+  padding: vars.$gutter;
+  margin-top: vars.$gutter;
+  font-weight: bold;
+  }
+
+&-item {
+  border-top: 1px vars.$color-alt solid;
+  padding-top: 0.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  &:hover {
+    background-color: vars.$color-alt;
+    transition-duration: vars.$transition-fast;
+
+}
+}
+
+}
